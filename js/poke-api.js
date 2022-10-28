@@ -18,7 +18,7 @@ function convertPokeApiDetailToPokemon(pokeDetail) { //Conervetendo pokeAPI para
     const stats = pokeDetail.stats.map((statType) => statType)
     pokemon.stats = stats
 
-    pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
+    pokemon.photo =  pokeDetail['sprites']['versions']['generation-v']['black-white']['animated']['front_default']
 
     return pokemon
 }
