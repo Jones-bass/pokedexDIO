@@ -21,11 +21,14 @@ function convertPokemonToLi(pokemon) {
 
 
         <div class="detail">
+        
+    
         <ol class="types">
-            ${pokemon.stats.map((type) => `
-            <li class="type">${type.stat.name}</br> ${type.base_stat}</li>`).join('')}
-        </ol>
-
+        ${pokemon.stats.map((type) => `
+            <li class="type">${type.stat.name}
+                    <progress max="100" value="${type.base_stat}"></progress>`).join('')}
+                </li>
+            </ol>
 
 
         <div>

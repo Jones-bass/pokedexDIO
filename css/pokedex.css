@@ -6,6 +6,23 @@
     list-style: none;
 }
 
+
+progress {
+    width: 90%;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+}
+
+
+progress::-moz-progress-bar {  
+    background: rgb(17, 16, 16);
+    border-radius: 8px;
+    padding: 2px;
+}
+
+
 .normal {
     background-color: #a6a877;
 }
